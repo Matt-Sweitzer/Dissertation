@@ -1,0 +1,35 @@
+Name,Type,Min.,Max.,Default,Short Description
+addAI,Boolean,,,FALSE,Add bots FOR TESTING ONLY
+amtSandbox,Boolean,,,FALSE,Testing; routes submission forms to sandbox instead of production
+BasePay,Decimal,0,10,3,Total pay for completion of the survey phase
+condition,Integer,1,2,1,Quasi-experimental condition: 1='Without selective disclosure'; 2='With selective disclosure'
+connectivity,Decimal,0,1,0.2,Connectivity of the random graph at Time_0
+DemoStepPay,Decimal,0,10,1,Total pay for completion of the demographic survey phase
+hasStarted,Integer,0,0,0,DO NOT ADJUST THIS
+MTurk,Boolean,,,TRUE,true - MTurk sample; false - ResearchMatch sample
+NetStepPay,Decimal,0,20,10,Total pay for completion of the network phase - split over 10 rounds
+tieChoiceProb,Decimal,0,1,0.2,Probability that a tie is selected to update in a round
+Topic1_Q,Integer,1,15,1,Topic for 1st round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic1_A,Integer,0,1,0,1st round question version: 0='VersionA'; 1='VersionB'
+Topic2_Q,Integer,1,15,3,Topic for 2nd round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic2_A,Integer,0,1,1,2nd round question version: 0='VersionA'; 1='VersionB'
+Topic3_Q,Integer,1,15,6,Topic for 3rd round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic3_A,Integer,0,1,0,3rd round question version: 0='VersionA'; 1='VersionB'
+Topic4_Q,Integer,1,15,7,Topic for 4th round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic4_A,Integer,0,1,1,4th round question version: 0='VersionA'; 1='VersionB'
+Topic5_Q,Integer,1,15,8,Topic for 5th round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic5_A,Integer,0,1,0,5th round question version: 0='VersionA'; 1='VersionB'
+Topic6_Q,Integer,1,15,10,Topic for 6th round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic6_A,Integer,0,1,1,6th round question version: 0='VersionA'; 1='VersionB'
+Topic7_Q,Integer,1,15,11,Topic for 7th round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic7_A,Integer,0,1,0,7th round question version: 0='VersionA'; 1='VersionB'
+Topic8_Q,Integer,1,15,13,Topic for 8th round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic8_A,Integer,0,1,1,8th round question version: 0='VersionA'; 1='VersionB'
+Topic9_Q,Integer,1,15,14,Topic for 9th round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic9_A,Integer,0,1,0,9th round question version: 0='VersionA'; 1='VersionB'
+Topic10_Q,Integer,1,15,15,Topic for 10th round: 1='Economy'; 2='Terror'; 3='Immigration'; 4='ForeignPolicy'; 5='HealthCare'; 6='Guns'; 7='SocialSecurity'; 8='Trade'; 9='Education'; 10='Race'; 11='Abortion'; 12='Environment'; 13='LGBTQ'; 14='Taxes'; 15='Crime'
+Topic10_A,Integer,0,1,1,Held out topic for uncertainty in 10th round
+Topic_HeldOut_Q,Integer,1,15,2,Held out topic for uncertainty in 10th round
+Topic_HeldOut_A,Integer,0,1,0,Held out question version for uncertainty in 10th round
+uncertainty,Boolean,,,FALSE,Whether questions about projection on future topic are shown to participants
+waitTime,Integer,0,60,30,Estimated lobby wait time in minutes

@@ -1,0 +1,20 @@
+<script type='text/javascript'>
+  var timeleft = 60;
+  var downloadTimer = setInterval(function(){
+    if(timeleft <= 0){
+      clearInterval(downloadTimer);
+      document.getElementById('countdown').innerHTML = 'Please submit the following HIT';
+    } else {
+      document.getElementById('countdown').innerHTML = 'This page will change to a HIT submission page in ' + timeleft + ' second(s)';
+    }
+    timeleft -= 1;
+  }, 1000);
+</script>
+
+<p style="text-align: center; font-size: 20px; font-family: Serif;"><strong>Chat Room (Phase 5)</strong></p>
+<p style="text-align: left; font-size: 16px; font-family: Serif;">Thank you. Please follow the link below to proceed to the chat room. To participate in this phase, you will first need to put in your participant identifier:</p>
+<p style="text-align: center; font-size: 42px; font-family: Serif;">{0}</p>
+<p style="text-align: left; font-size: 16px; font-family: Serif;"><strong>It is VERY important that this identifier is correct, because that identifier is what we will use to pay you your bonus payment for this round!</strong> If your participant identifier does not appear in the chat logs, we will not be able to link this information back to your participation in the previous phases.</p>
+<p style="text-align: left; font-size: 16px; font-family: Serif;"><a href="https://breadboard2.asc.ohio-state.edu/?page_id=9" target="_blank"><span style="color: #008000;"><strong>Please follow this link to the GREEN chat room.</strong></span></a></p>
+<p style="text-align: left; font-size: 16px; font-family: Serif;">{1}</p>
+<p style="text-align: right; font-size: 14px; font-family: Serif;">[Page 3/3]</p>

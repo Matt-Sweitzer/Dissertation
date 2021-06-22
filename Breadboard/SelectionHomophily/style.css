@@ -1,0 +1,86 @@
+circle[consent=true] {
+  fill: green;
+}
+circle[consent=false] {
+  fill: red;
+}
+circle[selectionSteps=true] {
+  fill: blue;
+}
+circle[bot=true] {
+  fill: orange;
+}
+circle {
+  stroke: #000000;
+  stroke-width: 1px;
+}
+circle.client[selectedfortie="0"] {
+  /* default; yellow, thin black border */
+  fill: #ffdd00;
+  stroke: #000000;
+  stroke-width: 2px;
+}
+circle.client[selectedfortie="1"] {
+  /* ego, existing; purple, thick black border */
+  fill: #ab00c2 !important;
+  stroke: #000000 !important;
+  stroke-width: 6px !important;
+}
+circle.client[selectedfortie="2"] {
+  /* alter, existing; yellow, thin black border (same as default) */
+  fill: #ffdd00 !important;
+  stroke: #000000 !important;
+  stroke-width: 2px !important;
+}
+circle.client[selectedfortie="3"] {
+  /* ego, new; purple, thick grey border */
+  fill: #ab00c2 !important;
+  stroke: #aaaaaa !important;
+  stroke-width: 6px !important;
+}
+circle.client[selectedfortie="4"] {
+  /* alter, new; yellow, thin black border (same as default) */
+  fill: #ffdd00 !important;
+  stroke: #000000 !important;
+  stroke-width: 2px !important;
+}
+circle.client[selectedfortie="5"] {
+  /* chat room choice, no choice made yet; grey, thin black border */
+  fill: #b3b3b3 !important;
+  stroke: #000000 !important;
+  stroke-width: 2px !important;
+}
+circle.client[selectedfortie="6"] {
+  /* chat room choice, green room; green, thin black border */
+  fill: #008000 !important;
+  stroke: #000000 !important;
+  stroke-width: 2px !important;
+}
+circle.client[selectedfortie="7"] {
+  /* chat room choice, orange room; orange, thin black border */
+  fill: #FF8C00 !important;
+  stroke: #000000 !important;
+  stroke-width: 2px !important;
+}
+line.client[selectedfortie="0"] {
+  /* default; thin black solid */
+  stroke: #000000;
+  stroke-width: 2px;
+}
+line.client[selectedfortie="1"] {
+  /* ego, existing; thick black solid */
+  stroke: #000000 !important;
+  stroke-width: 6px !important;
+}
+line.client[selectedfortie="2"] {
+  /* ego, new; thick grey dashed */
+  stroke: #aaaaaa !important;
+  stroke-width: 6px !important;
+  stroke-dasharray: 5,5 !important;
+}
+.btn-custom1{color:#ffffff;background-color:#4d4d4d;border-color:#000000}
+.btn-custom1:hover{color:#f2f2f2;background-color:#333333;border-color:#000000}
+.btn-customg{color:#000000;background-color:#008000;border-color:#000000}
+.btn-customg:hover{color:#000000;background-color:#006600;border-color:#003300}
+.btn-customo{color:#000000;background-color:#FF8C00;border-color:#000000}
+.btn-customo:hover{color:#000000;background-color:#cc7000;border-color:#003300}

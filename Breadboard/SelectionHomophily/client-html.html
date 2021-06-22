@@ -1,0 +1,35 @@
+<!-- client-html.html -->
+<div class="main" id="mainDiv">
+    <!--
+    <div id="dropped" ng-if="client.player.dropped == true">
+        <p style="text-align: left; font-size: 16px; font-family: Serif;">The study has started and you failed to indicate your consent to participate in the study. As a result, you will not be permitted to participate. If you feel you have reached this page in error, please contact the study administrators at <a href="mailto:selectivitystudy@matthewsweitzer.com" target="_blank">selectivitystudy@matthewsweitzer.com</a>.</p>
+        <p style="text-align: left; font-size: 16px; font-family: Serif;">If you are participating through the Amazon Mechanical Turk portal, please return this HIT.</p>
+    </div>
+
+    <script>
+      var x = navigator.userAgent;
+      var y = x.includes("Chrome");
+      var z = navigator.javaEnabled();
+      if(y & !z){document.getElementById("rightDiv").innerHTML = "This study does not support the Google Chrome browser, as colors do not display properly. Please join this study by copying and pasting the link in the address bar above into a supported browser, such as Firefox, Safari, or Microsoft Edge."}
+    </script>
+    -->
+    <div id="status" class="timers" ng-hide="client.player.dropped == true">
+        <bb-timer ng-repeat="timer in client.player.timers | orderBy:'order'"
+                  timer="timer"
+        ></bb-timer>
+    </div>
+    <div id="game" class="game">
+        <div id="graph" ng-hide="client.player.dropped == true"></div>
+        <div id="rightDiv">
+            <div id="text" ng-bind-html="client.player.text | to_trusted"></div>
+            <div id="choices" ng-controller="ChoicesCtrl">
+                <ng-form name="choicesForm" ng-hide="client.player.choices === undefined">
+                    <div ng-if="custom" bind-html-compile="custom"></div>
+                    <button ng-repeat="choice in childChoices |filter: {class: '!drop'}" class="{{choice.class}}" ng-click="makeChoice(choice.uid)" ng-disabled="choicesForm.$invalid">
+                        {{choice.name}}
+                    </button>
+                </ng-form>
+            </div>
+        </div>
+    </div>
+</div> <!-- mainDiv -->
