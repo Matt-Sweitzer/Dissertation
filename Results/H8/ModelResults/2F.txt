@@ -1,0 +1,7 @@
+                          Estimate    2.5%   97.5%
+edges                     2.424393 -0.4843  5.1164
+edgecov.interactCov[[i]]  0.023802 -0.0235  0.0780
+edgecov.diffCov[[i]]     -0.118240 -0.7982  0.2450
+nodecov.Importance       -0.087698 -0.3246  0.1303
+ostar2                   -0.027028 -0.1279  0.1430
+edgecov.memory[[i]]       3.363332  3.1283  3.9070

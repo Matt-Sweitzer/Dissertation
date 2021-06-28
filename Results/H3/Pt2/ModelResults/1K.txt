@@ -1,0 +1,6 @@
+                           Estimate     2.5%    97.5%
+edges                     -26.69559 -26.7548 -26.6296
+edgecov.Mat_Withheld[[i]]  -0.01460  -0.0331   0.0051
+edgecov.discCov[[i]]       53.33765  53.3110  53.3696
+ostar2                      0.01407   0.0073   0.0200
+edgecov.memory[[i]]         0.05796   0.0397   0.0794

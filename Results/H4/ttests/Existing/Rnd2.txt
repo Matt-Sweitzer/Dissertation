@@ -1,0 +1,14 @@
+
+	One Sample t-test
+
+data:  decisionAgg$existing_2
+t = 6.6231, df = 11, p-value = 3.745e-05
+alternative hypothesis: true mean is not equal to 0.5
+95 percent confidence interval:
+ 0.7064108 0.9118792
+sample estimates:
+mean of x 
+ 0.809145 
+
+[1] 0.809145
+[1] 0.161692
